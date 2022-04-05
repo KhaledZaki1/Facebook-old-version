@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="imgs/icon.png">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Facebook - log in or sign up</title>
+</head>
+<body>
+
+    <header>
+      <div class="container">
+        <h1 class="logo" >
+            facebook
+        </h1>
+        <form action="" method="">
+        <div class="form-group">
+            <label>Email or Phone</label>
+            <input type="text" placeholder=""/>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password"/>
+            <a href="#">Forget password?</a>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="login" class="btn"/>
+        </div>
+        </form>
+        <p style="clear:both;"></p>
+      </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="group">
+                <p>
+                    Facebook helps you connect and share with the people in your life.
+                </p>
+                <img src="imgs/login.png"/>
+            </div>
+
+            <!--- Form Start--->
+            <div class="form">
+                <h2>Create an account</h2>
+                <p id="free">
+                    It's free and always will be
+                </p>
+
+                <form action="" method="">
+                    <input type="text" class="w-50" placeholder="First name"/>
+                    <input type="text" class="w-50" placeholder="Surname"/>
+                    <input type="text" placeholder="Mobile number or email address"/>
+                    <div class="wrapper">
+                         <input type="password" placeholder="Enter your password" id="password"/>
+                         <span>
+                           <i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
+                         </span>  
+                    </div>
+                    <script>
+                        var state=false;
+                        function toggle(){
+                            if (state){
+                                document.getElementById("password").setAttribute("type","passsword");
+                                state = false;
+                            }
+                            else{
+                                document.getElementById("password").setAttribute("type","text");
+                                state = true;   
+                            }
+                        }
+                    </script>
+                    <label class="birthdate-label"><strong>Birthday</strong></label>
+                    <input type="date"/>
+                    <a href="#">
+                        Why do i need to provide my date of birth?
+                    </a>
+                    <br/>
+                    <input type="radio" class="d-inline" value="Female"/>
+                    <label class="d-inline"></label>Female</label>
+                    <input type="radio" class="d-inline" value="Male"/>
+                    <label class="d-inline">Male</label>
+                    
+                    <p>
+                        By clicking Sign Up. you agree to our <strong>Terms</strong>,<strong>Data Policy</strong> and <strong>Cookie Policy</strong>.you may receive SMS notifications from us and can opt out at any time.
+                    </p>
+                    <input type="submit" value="Sign Up"/>
+                </form>
+                <!---Form End--->
+                <a href="#">
+                    Don't have an account? Create one.
+                </a>
+                <p style="clear:both"></p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

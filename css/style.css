@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    width: 70%;
+    margin: auto;
+}
+header {
+    background-color: #4c659e;
+    padding: 20px 0;
+    padding-bottom: 5px;
+}
+header h1{
+    margin: 0;
+    color: white;
+    float: left;
+    font-size: 50px;
+}
+header form{
+    float: right;
+}
+header form label,header form input{
+    display: block;
+    color: white;
+}
+form .form-group{
+    float: left;
+    margin: 0 5px;
+}
+form .form-group input{
+    padding: 5px;
+}
+form .form-group a{
+    color: white;
+    text-decoration: none;
+}
+form .btn{
+    margin-top: 18px;
+    margin-left: 10px;
+    background: #4c659e;
+    border: 1px solid #2a4276;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/**** start styling the section ****/
+section{
+    background: #E7EAF3;
+    height: 100vh;
+    padding-top: 15px;
+    
+}
+section .group p{
+    margin-top: 0;
+    font-size:20px;
+    line-height: 1.6;
+}
+section .form , section .group{
+    float: left;
+    width: 50%;
+}
+section .group p{
+    font-size: 24px;
+    margin-top: 18px;
+}
+section .group img{
+    height: 170px
+}
+
+.form h2{
+    margin-top: 18px;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+.form #free{
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.form input{
+    display: block;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.form input::placeholder{
+    color: #A9A9A9;
+    font-weight: bolder;
+}
+
+.birthdate-label{
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.form .w-50{
+    float: left;
+    width: 49%;
+}
+
+.form .w-50:first-of-type{
+    margin-right: 2%;
+}
+
+.form .d-inline{
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.form input[type="radio"]{
+     width: 3%;
+}
+
+.form input[type="submit"]{
+    background:#5E9B4D ;
+    width: 40%;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+span{
+    position: absolute;
+    right: 216px;
+    top: 53%;
+    cursor: pointer;
+}
+
+.fa{
+    font-size: 20px;
+}
